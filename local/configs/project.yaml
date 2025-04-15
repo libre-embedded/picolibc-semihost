@@ -1,6 +1,6 @@
 ---
 name: picolibc-semihost
-owner: vkottler
+owner: libre-embedded
 description: A bare-metal picolibc-based bootstrapping environment.
 embedded: true
 
@@ -9,4 +9,4 @@ main_branch: master
 version:
   major: 0
   minor: 2
-  patch: 4
+  patch: 5
