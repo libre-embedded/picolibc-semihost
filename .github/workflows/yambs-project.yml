@@ -54,6 +54,8 @@ jobs:
       #     rm llvm.sh
       - run: sudo apt-get install doxygen clang-format-19
       - run: mk download-toolchains
+      - run: echo "$(git rev-parse --show-toplevel)/toolchains/arm-picolibc-eabi/bin" >> "$GITHUB_PATH"
+      - run: echo "$PATH"
       - run: mk g
       - run: ninja all format-check
       - run: mk dist variant=picolibc-semihost
