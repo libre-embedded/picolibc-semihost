@@ -1,6 +1,7 @@
 # Workflow tasks.
-vmklib
-yambs
+vmklib>=2.0.7
+yambs>=3.1.1
+ifgen>=4.4.3
 
 # Documentation.
 sphinx
