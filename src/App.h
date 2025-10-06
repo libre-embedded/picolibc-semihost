@@ -43,16 +43,33 @@ class App
         logger.log(prompt);
     }
 
-    inline void poll_stdin(char *input)
+    inline bool poll_stdin(void)
     {
-        if (stdin_fd > 0 and enable_semihosting and gets(input) != NULL)
-        {
-            /* Publish command data. */
-            buf.push_n_blocking(input, strlen(input));
-            buf.push_blocking('\n');
+        bool do_exit = false;
 
-            logger.log(prompt);
+        if (stdin_fd > 0 and enable_semihosting)
+        {
+            int value = 'a';
+            while (value != '\n' && value != EOF)
+            {
+                value = getchar();
+                if (value != EOF)
+                {
+                    buf.push_blocking(value);
+                }
+            }
+
+            if (value == EOF)
+            {
+                do_exit = true;
+            }
+            else
+            {
+                logger.log(prompt);
+            }
         }
+
+        return do_exit;
     }
 
     Coral::PrintfLogger logger;

@@ -1,17 +1,17 @@
 # =====================================
 # generator=datazen
-# version=3.1.4
-# hash=024bb83c5c86dcfbc5de812dd4067b2d
+# version=3.2.3
+# hash=42d8fd0e56160450f1a59a16e9394ee7
 # =====================================
 ---
 project:
   name: picolibc-semihost
 
   github: {owner: &self vkottler}
-  version: {major: 0, minor: 2, patch: 4}
+  version: {major: 0, minor: 3, patch: 0}
 variants:
   clang:
-    suffix: &clang_version "-18"
+    suffix: &clang_version "-19"
     enabled: false
 
   # Disable regular targets.
