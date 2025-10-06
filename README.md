@@ -2,14 +2,14 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=56332174a090abc60a5ba3c4f4d1361c
+    hash=1a3c0e2924fa2d3f3769e2e4593c362e
     =====================================
 -->
 
-# picolibc-semihost ([0.3.0](https://github.com/vkottler/picolibc-semihost/releases/tag/0.3.0))
+# picolibc-semihost ([0.3.0](https://github.com/libre-embedded/picolibc-semihost/releases/tag/0.3.0))
 
-[![codecov](https://codecov.io/gh/vkottler/picolibc-semihost/branch/master/graph/badge.svg)](https://codecov.io/gh/vkottler/picolibc-semihost)
-![Build Status](https://github.com/vkottler/picolibc-semihost/actions/workflows/yambs-project.yml/badge.svg)
+[![codecov](https://codecov.io/gh/libre-embedded/picolibc-semihost/branch/master/graph/badge.svg)](https://codecov.io/gh/libre-embedded/picolibc-semihost)
+![Build Status](https://github.com/libre-embedded/picolibc-semihost/actions/workflows/yambs-project.yml/badge.svg)
 
 *A bare-metal picolibc-based bootstrapping environment.*
 

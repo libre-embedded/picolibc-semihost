@@ -1,13 +1,13 @@
 # =====================================
 # generator=datazen
 # version=3.2.3
-# hash=42d8fd0e56160450f1a59a16e9394ee7
+# hash=73d2097061fdc7ff7f090f00eed7be20
 # =====================================
 ---
 project:
   name: picolibc-semihost
 
-  github: {owner: &self vkottler}
+  github: {owner: &self libre-embedded}
   version: {major: 0, minor: 3, patch: 0}
 variants:
   clang:
