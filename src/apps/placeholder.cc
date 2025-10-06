@@ -15,8 +15,6 @@ void register_commands(CommandLineApp &app)
     app.add_handler("toggle", do_toggle, "toggle a boolean true or false");
 }
 
-char input[BUFSIZ];
-
 extern "C" void _exit(int code)
 {
     (void)code;
@@ -53,9 +51,9 @@ int main(void)
 {
     App app(register_commands);
 
-    while (true)
+    while (not app.poll_stdin())
     {
-        app.poll_stdin(input);
+        ;
     }
 
     return 0;

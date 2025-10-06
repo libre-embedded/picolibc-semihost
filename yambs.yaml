@@ -1,7 +1,7 @@
 # =====================================
 # generator=datazen
-# version=3.1.4
-# hash=024bb83c5c86dcfbc5de812dd4067b2d
+# version=3.2.3
+# hash=419bfb945e50db283bc7c3000138020d
 # =====================================
 ---
 project:
@@ -11,7 +11,7 @@ project:
   version: {major: 0, minor: 2, patch: 4}
 variants:
   clang:
-    suffix: &clang_version "-18"
+    suffix: &clang_version "-19"
     enabled: false
 
   # Disable regular targets.

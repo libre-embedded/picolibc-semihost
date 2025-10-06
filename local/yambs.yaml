@@ -11,5 +11,7 @@ variants:
     ldflag_groups: [semihost]
 
 dependencies:
-  - github: {repo: coral, owner: &self vkottler}
+  # - github: {repo: coral, owner: &self libre-embedded}
+  #   as_source: true
+  - directory: ../coral
     as_source: true

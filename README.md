@@ -1,8 +1,8 @@
 <!--
     =====================================
     generator=datazen
-    version=3.1.4
-    hash=5a00f08469c7092e27a711a30fc1e189
+    version=3.2.3
+    hash=83d2fb8867b1706f9dda3cc3cf782206
     =====================================
 -->
 
@@ -24,7 +24,7 @@
 
 ## Workflow
 
-Install [vmklib](https://github.com/vkottler/vmklib) such that you can
+Install [vmklib](https://github.com/libre-embedded/vmklib) such that you can
 `mk --version` (a `pip install vmklib` to your desired Python environment is
 all that's needed).
 
@@ -43,11 +43,11 @@ This should result in fully compiled code that you can now use or add to.
 ### Generating Interfaces
 
 Structs and enumerations can be defined for
-[ifgen](https://github.com/vkottler/ifgen) which can then generate C++ source
+[ifgen](https://github.com/libre-embedded/ifgen) which can then generate C++ source
 code into the project.
 
 Generating configurations based on an
-[SVD](https://github.com/vkottler/ifgen/tree/master/ifgen/data/svd) file:
+[SVD](https://github.com/libre-embedded/ifgen/tree/master/ifgen/data/svd) file:
 
 ```
 mk ifgen-svd-XMC4700
