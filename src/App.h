@@ -39,7 +39,7 @@ class App
 
         register_common();
 
-        logger.log("Application starting.\n");
+        logger.log("Application starting. %d\n", stdin_fd);
         logger.log(prompt);
     }
 
@@ -47,7 +47,8 @@ class App
     {
         bool do_exit = false;
 
-        if (stdin_fd > 0 and enable_semihosting)
+        // if (stdin_fd > 0 and enable_semihosting)
+        if (enable_semihosting)
         {
             int value = 'a';
             while (value != '\n' && value != EOF)
