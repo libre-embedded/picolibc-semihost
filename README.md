@@ -1,12 +1,12 @@
 <!--
     =====================================
     generator=datazen
-    version=3.2.3
-    hash=1a3c0e2924fa2d3f3769e2e4593c362e
+    version=3.2.4
+    hash=6024d9c4258ef34c533ffce0ab06062d
     =====================================
 -->
 
-# picolibc-semihost ([0.3.0](https://github.com/libre-embedded/picolibc-semihost/releases/tag/0.3.0))
+# picolibc-semihost ([0.3.1](https://github.com/libre-embedded/picolibc-semihost/releases/tag/0.3.1))
 
 [![codecov](https://codecov.io/gh/libre-embedded/picolibc-semihost/branch/master/graph/badge.svg)](https://codecov.io/gh/libre-embedded/picolibc-semihost)
 ![Build Status](https://github.com/libre-embedded/picolibc-semihost/actions/workflows/yambs-project.yml/badge.svg)
