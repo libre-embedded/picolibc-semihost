@@ -32,6 +32,7 @@ class App
         bool initialize_semihosting = true)
         : logger(), buf(), app(register_commands, buf, &logger)
     {
+        stdin_fd = -1;
         if (initialize_semihosting && enable_semihosting)
         {
             stdin_fd = sys_semihost_open(":tt", 0);
@@ -47,8 +48,7 @@ class App
     {
         bool do_exit = false;
 
-        // if (stdin_fd > 0 and enable_semihosting)
-        if (enable_semihosting)
+        if (stdin_fd >= 0 and enable_semihosting)
         {
             int value = 'a';
             while (value != '\n' && value != EOF)
